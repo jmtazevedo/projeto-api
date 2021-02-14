@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 # Criar um API flask
 app = Flask(__name__)
+
 # Criar um instância de SQLAlchemy
 app.config['SECRET_KEY'] = 'FSD2323f#$!SAH'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///blog.db'
@@ -11,16 +12,14 @@ db = SQLAlchemy(app)
 db: SQLAlchemy
 
 # Definir a estrutra da tabela Postagem: id_postagem, titulo, autor
-
-
 class Postagem(db.Model):
     __tablename__ = 'postagem'
     id_postagem = db.Column(db.Integer, primary_key=True)
     titulo = db.Column(db.String)
     id_autor = db.Column(db.Integer, db.ForeignKey('autor.id_autor'))
+
+
 # Definir a estrutra da tabela Autor: id_autor, nome, email, senha, admin, postagens
-
-
 class Autor(db.Model):
     __tablename__ = 'autor'
     id_autor = db.Column(db.Integer, primary_key=True)
