@@ -40,6 +40,7 @@ def inicializar_banco():
     db.session.commit()
 
 
+
 if __name__ == "__main__":
     #inicializar_banco()
     pass
