@@ -506,5 +506,6 @@ def excluir_autor(autor, id_autor):
 # ============================================ #
 # Início do Programa
 # ============================================ #
-app.run(port=5000, host='localhost', debug=True)
+if __name__ == '__main__':
+    app.run(port=5000, host='localhost', debug=True)
 >>>>>>> 90d41411723e8b8cb739dcedd7f68f6ec3403a02

@@ -89,6 +89,5 @@ def inicializar_banco():
 
 
 if __name__ == "__main__":
-    #inicializar_banco()
-    pass
+    inicializar_banco()
 >>>>>>> 90d41411723e8b8cb739dcedd7f68f6ec3403a02

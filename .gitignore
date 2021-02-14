@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ambiente virtual, não é necessário publicar no Github
+heroku-api/
